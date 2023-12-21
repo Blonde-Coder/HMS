@@ -1,22 +1,96 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+:root{
+    --bg-color:#075D24;
+    --text-color:#f5f5f5;
+    --button-width:9.375rem;
+    --button-hieght:30px;
+  }
 
 .flex{
     display: flex;
+    margin-left: 150px;
+    margin-top: 20px;
 }
+
 .image{
    margin-left: 10px;
+   height: 700px;
+   width: 500px;
+   background-color: #fff;
 }
+
 .book{
     margin-top: 50px;
     margin-left: 150px;
 }
+
 .Appointment-D{
-    background-color: #074007;
+    background-color: var(--bg-color);
     border:transparent;
     border-radius: 20px;
     margin:50px  200px;
-    width: 150px;
-    color: #f5f5f5;
-    
-   height: 30px;
-   
+    width: var(--button-width);
+    color: var(--text-color);
+    height: var(--button-hieght);
+}
+
+.book-Appointment{
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    width: var(--button-width);
+    height: var(--button-hieght);
+    border: transparent;
+    color: var(--text-color);
+}
+
+.writup{
+    margin-top: 50px;
+}
+
+.form{
+  margin-bottom: 30px;
+  width: 250px;
+  height: var(--button-hieght);
+}
+
+.form-flex{
+  display: flex;
+}
+
+label{
+  position:  absolute;
+  margin-top: -20px; 
+}
+
+.div2{
+  margin-left: 20px;
+}
+
+.book-Appointment2{
+  margin-left: 200px;
+}
+
+.select{
+    width: 260px;
+    height: 40px;
 }
